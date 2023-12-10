@@ -1,0 +1,60 @@
+/* Reset all margins, paddings, borders */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Set box-sizing property for better layout control */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove list styling */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove hyperlink styling */
+a {
+  text-decoration: none; /* remove underline*/
+  color: #333; /* set link color*/
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+:root,
+body,
+#root {
+  height: 100%;
+}
+#root {
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
